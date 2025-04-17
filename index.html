@@ -3,52 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Mural de Portfólios</title>
+    <title>Sobre Mim</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="usuario.css">
 </head>
 <body>
     <header>
-        <h1>Meus Projetos</h1>
-        <p>Uma seleção do meu trabalho.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Portfólio</a></li>
+                <li><a href="usuario.html" class="active">Sobre Mim</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="portfolio-grid">
-        <div class="portfolio-item" data-project-id="1">
-            <img src="imagens/projeto1-thumb.jpg" alt="Projeto 1">
-            <div class="overlay">
-                <h3>Projeto Incrível 1</h3>
-                <p>Breve descrição do projeto 1.</p>
-            </div>
-        </div>
-
-        <div class="portfolio-item" data-project-id="2">
-            <img src="imagens/projeto2-thumb.jpg" alt="Projeto 2">
-            <div class="overlay">
-                <h3>Projeto Fantástico 2</h3>
-                <p>Pequena descrição do projeto 2.</p>
-            </div>
-        </div>
-
-        <div class="portfolio-item" data-project-id="3">
-            <img src="imagens/projeto3-thumb.jpg" alt="Projeto 3">
-            <div class="overlay">
-                <h3>Projeto Exemplo 3</h3>
-                <p>Mais detalhes sobre o projeto 3.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="project-details" class="hidden">
-        <div class="details-content">
-            <button id="close-details">Voltar</button>
-            <h2 id="project-title"></h2>
-            <div id="project-description"></div>
-            <div id="project-images">
+    <main id="user-profile-layout">
+        <section class="profile-column">
+            <div class="profile-header">
+                <div class="profile-image">
+                    <img src="imagens/foto-perfil.jpg" alt="Sua Foto de Perfil">
                 </div>
-            <p><a id="project-link" href="#" target="_blank">Ver Projeto Online</a></p>
-        </div>
-    </section>
+                <div class="profile-info">
+                    <h1>Seu Nome Completo</h1>
+                    <p class="job-title">Seu Cargo ou Profissão</p>
+                </div>
+            </div>
 
-    <script src="script.js"></script>
+            <section class="bio">
+                <h2>Sobre Mim</h2>
+                <p>Escreva aqui sua biografia...</p>
+                <p>Mais detalhes sobre sua trajetória...</p>
+            </section>
+
+            <section class="skills">
+                <h2>Habilidades</h2>
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </section>
+
+            <section class="contact">
+                <h2>Contato</h2>
+                <ul class="contact-list">
+                    <li><a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></li>
+                    <li><a href="https://linkedin.com/in/seuperfil" target="_blank">LinkedIn</a></li>
+                </ul>
+            </section>
+        </section>
+
+        <div class="background-image-column">
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Seu Nome</p>
+    </footer>
 </body>
 </html>
