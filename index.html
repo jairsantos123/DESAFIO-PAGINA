@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Mural de Portfólios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Meus Projetos</h1>
+        <p>Uma seleção do meu trabalho.</p>
+    </header>
+
+    <section id="portfolio-grid">
+        <div class="portfolio-item" data-project-id="1">
+            <img src="imagens/projeto1-thumb.jpg" alt="Projeto 1">
+            <div class="overlay">
+                <h3>Projeto Incrível 1</h3>
+                <p>Breve descrição do projeto 1.</p>
+            </div>
+        </div>
+
+        <div class="portfolio-item" data-project-id="2">
+            <img src="imagens/projeto2-thumb.jpg" alt="Projeto 2">
+            <div class="overlay">
+                <h3>Projeto Fantástico 2</h3>
+                <p>Pequena descrição do projeto 2.</p>
+            </div>
+        </div>
+
+        <div class="portfolio-item" data-project-id="3">
+            <img src="imagens/projeto3-thumb.jpg" alt="Projeto 3">
+            <div class="overlay">
+                <h3>Projeto Exemplo 3</h3>
+                <p>Mais detalhes sobre o projeto 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="project-details" class="hidden">
+        <div class="details-content">
+            <button id="close-details">Voltar</button>
+            <h2 id="project-title"></h2>
+            <div id="project-description"></div>
+            <div id="project-images">
+                </div>
+            <p><a id="project-link" href="#" target="_blank">Ver Projeto Online</a></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
