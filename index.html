@@ -1,64 +1,95 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mim</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="usuario.css">
+    <title>Adarsh - Product Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        }
+        
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('/api/placeholder/1200/600');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+            background-color: #d4dde5;
+        }
+        
+        .nav-pill {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Portfólio</a></li>
-                <li><a href="usuario.html" class="active">Sobre Mim</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main id="user-profile-layout">
-        <section class="profile-column">
-            <div class="profile-header">
-                <div class="profile-image">
-                    <img src="imagens/foto-perfil.jpg" alt="Sua Foto de Perfil">
+    <!-- Hero Section -->
+    <div class="hero-section flex flex-col">
+        <!-- Navigation -->
+        <div class="container mx-auto pt-4 px-4">
+            <nav class="nav-pill rounded-full px-4 py-2 flex items-center justify-between max-w-xl mx-auto">
+                <a href="#" class="text-gray-800 font-medium">STUDIO</a>
+                <a href="#" class="text-gray-800 font-medium">PROJECTS</a>
+                <a href="#" class="w-10 h-10 rounded-full bg-white overflow-hidden flex items-center justify-center">
+                    <img src="/api/placeholder/40/40" alt="Profile" class="w-full h-full object-cover" />
+                </a>
+                <a href="#" class="text-gray-800 font-medium">ABOUT</a>
+                <a href="#" class="text-gray-800 font-medium flex items-center">
+                    RESUME
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </a>
+            </nav>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between h-full px-4 pb-16">
+            <!-- Left side with image -->
+            <div class="md:w-1/2 relative">
+                <img src="/api/placeholder/500/600" alt="Adarsh in mountains" class="rounded-lg shadow-lg" />
+            </div>
+            
+            <!-- Right side with text -->
+            <div class="md:w-1/2 mt-8 md:mt-0 md:pl-12">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Namaste, I'm Adarsh 🙏</h1>
+                
+                <div class="flex flex-wrap gap-4 mb-8">
+                    <div class="flex items-center">
+                        <span class="mr-2">👨‍💻</span>
+                        <span class="font-medium text-lg">Product Designer</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="mr-2">🎵</span>
+                        <span class="font-medium text-lg">Musician</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="mr-2">✨</span>
+                        <span class="font-medium text-lg">Mythology Nerd</span>
+                    </div>
                 </div>
-                <div class="profile-info">
-                    <h1>Seu Nome Completo</h1>
-                    <p class="job-title">Seu Cargo ou Profissão</p>
+                
+                <p class="text-lg mb-6">Crafted experiences for</p>
+                
+                <div class="flex flex-wrap gap-6 items-center">
+                    <div class="logo-container">
+                        <div class="text-2xl font-bold text-pink-600">plum</div>
+                    </div>
+                    <div class="logo-container">
+                        <div class="text-2xl font-bold">DELHIVERY</div>
+                    </div>
+                    <div class="logo-container">
+                        <div class="text-2xl font-bold flex items-center">
+                            <span class="mr-1 text-gray-800">🔍</span>
+                            lenskart
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <section class="bio">
-                <h2>Sobre Mim</h2>
-                <p>Escreva aqui sua biografia...</p>
-                <p>Mais detalhes sobre sua trajetória...</p>
-            </section>
-
-            <section class="skills">
-                <h2>Habilidades</h2>
-                <ul class="skills-list">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-            </section>
-
-            <section class="contact">
-                <h2>Contato</h2>
-                <ul class="contact-list">
-                    <li><a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></li>
-                    <li><a href="https://linkedin.com/in/seuperfil" target="_blank">LinkedIn</a></li>
-                </ul>
-            </section>
-        </section>
-
-        <div class="background-image-column">
-            </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Seu Nome</p>
-    </footer>
+        </div>
+    </div>
 </body>
 </html>
